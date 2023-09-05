@@ -6,13 +6,13 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './routes/Home/index.jsx'
 import Produtos from './routes/Produtos/index.jsx'
-import Error404 from './routes/Error/index.jsx'
+import Error from './routes/Error/index.jsx'
 import EditarProduto from './routes/EditarProdutos/index.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: "/",
+    element: "App/",
     errorElement: <Error/>,
     children:[
       {
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         elementt: <Produtos/>
       },
       {
-        path: "/produtos/editar",
+        path: "/produtos/editar/:id",
         elementt: <EditarProduto/>
       },
 
