@@ -12,7 +12,7 @@ import EditarProduto from './routes/EditarProdutos/index.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: "App/",
+    element: <App/>,
     errorElement: <Error/>,
     children:[
       {
